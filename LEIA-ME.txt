@@ -1,0 +1,28 @@
+IRMÃOS DE CARIDADE — SITE PARA GITHUB PAGES
+
+O QUE VEM NESTA PASTA
+- index.html: página completa, responsiva para celular e computador.
+- imagens/: logotipo oficial e fotos enviadas para o projeto.
+
+COMO PUBLICAR NO GITHUB
+1. Abra seu repositório no GitHub (ou crie um repositório novo).
+2. Clique em Add file > Upload files.
+3. Envie o arquivo index.html e a pasta imagens inteira. Os dois precisam ficar na raiz do repositório.
+4. Abra Settings > Pages.
+5. Em Build and deployment, escolha Deploy from a branch.
+6. Selecione a branch main e a pasta /(root), depois clique em Save.
+7. Aguarde o GitHub mostrar o endereço publicado na área Pages.
+
+ANTES DE PUBLICAR
+- Troque o endereço provisório “Rua Exemplo, nº 100 — Centro, Barão de Cocais/MG” pelo endereço correto.
+- Confirme com o grupo se a chave Pix CNPJ 33.795.005/0001-07, o e-mail e o Instagram estão corretos e autorizados para divulgação.
+- Confirme se a estimativa de R$ 7,00 por refeição continua válida. Os valores são apresentados como estimativa informada pelo grupo.
+- Confirme que as pessoas fotografadas autorizaram a publicação das imagens.
+
+COMO EDITAR
+- Textos e endereço: abra index.html no GitHub, clique no lápis (Edit) e altere o texto correspondente.
+- Fotos: substitua os arquivos na pasta imagens mantendo os mesmos nomes, ou edite o caminho da imagem no index.html.
+- Para publicar as alterações, clique em Commit changes.
+
+IMPORTANTE
+Não apague a pasta imagens nem renomeie os arquivos sem atualizar os caminhos no HTML. A página é estática e não precisa de servidor pago.

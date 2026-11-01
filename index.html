@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075b45">
+  <meta name="color-scheme" content="light">
+  <meta property="og:title" content="Irmãos de Caridade | Solidariedade que alimenta a esperança">
+  <meta property="og:description" content="Conheça nosso trabalho solidário e descubra como ajudar a levar refeições e acolhimento a quem precisa.">
+  <meta property="og:type" content="website">
+  <meta name="description" content="Conheça o trabalho solidário dos Irmãos de Caridade, grupo espírita que prepara e entrega refeições a pessoas em situação de vulnerabilidade.">
+  <title>Irmãos de Caridade | Solidariedade que alimenta a esperança</title>
+  <style>
+    :root{--green:#075b45;--deep:#064536;--light:#e8f4ef;--aqua:#28b9b0;--cream:#fbfaf5;--gold:#e8c77d;--ink:#23352e;--muted:#607168;--white:#fff;--shadow:0 16px 40px rgba(6,69,54,.10);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+    a{color:inherit}.container{width:min(1120px,calc(100% - 36px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(251,250,245,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(7,91,69,.12)}
+    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--deep);font-weight:800;line-height:1.2}
+    .brand img{width:58px;height:58px;object-fit:contain;border-radius:50%}.brand small{display:block;color:var(--muted);font-size:.67rem;letter-spacing:.1em;margin-top:4px}
+    .nav-links{display:flex;align-items:center;gap:18px}.nav-links a{text-decoration:none;color:var(--muted);font-size:.88rem;font-weight:700}.nav-links a:hover{color:var(--aqua)}
+    .nav-links a:focus-visible,.button:focus-visible,.copy-button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+    .nav-links a{transition:color .2s ease}
+    .brand img{box-shadow:0 4px 14px rgba(6,69,54,.10)}
+    .button{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 20px;border:0;border-radius:999px;background:var(--green);color:#fff;text-decoration:none;font-weight:800;cursor:pointer;transition:.2s}
+    .button:hover{background:var(--deep);transform:translateY(-2px)}.button-light{background:#fff;color:var(--green);box-shadow:0 4px 18px rgba(6,69,54,.06)}
+    .hero{position:relative;padding:64px 0 72px;background:radial-gradient(circle at 85% 15%,rgba(40,185,176,.16),transparent 30%),linear-gradient(130deg,#e8f4ef,#f7f4e9);overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:46px;position:relative;z-index:1}.eyebrow{color:var(--green);font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;font-weight:900}
+    h1,h2,h3{line-height:1.15;margin-top:0}h1{font-size:clamp(2.5rem,5vw,4.3rem);letter-spacing:-.045em;margin:15px 0 22px;color:var(--deep)}h1 span{color:#159e92}
+    .hero p{max-width:620px;font-size:1.1rem;color:#4f655b}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .hero-visual{min-height:390px;border-radius:32px;padding:20px;background:#d0e8dd;position:relative;box-shadow:var(--shadow);display:grid;place-items:center}
+    .hero-visual:before{content:"";position:absolute;inset:14px;border:1px solid rgba(7,91,69,.13);border-radius:25px}
+    .hero-photo{width:100%;height:350px;object-fit:cover;border-radius:22px;position:relative;z-index:1}
+    .photo-caption{position:absolute;bottom:31px;left:31px;right:31px;z-index:2;padding:13px 16px;border-radius:15px;background:rgba(6,69,54,.88);color:#fff;font-weight:700}
+    section{padding:76px 0}.section-heading{max-width:760px;margin-bottom:32px}.section-heading h2{font-size:clamp(2rem,3.8vw,3rem);color:var(--deep);margin:12px 0 14px;letter-spacing:-.035em}.section-heading p{color:var(--muted);font-size:1.04rem;margin:0}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:center}.about-emblem{display:grid;place-items:center;min-height:300px;padding:28px;border-radius:var(--radius);background:var(--light)}.about-emblem img{width:min(100%,245px);border-radius:50%}
+    .about-card{background:white;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);border:1px solid rgba(7,91,69,.07)}.about-card h3{font-size:1.45rem;color:var(--deep)}
+    .address{margin-top:18px;padding:16px 18px;background:#f3f8f4;border-radius:14px;border-left:4px solid var(--aqua)}.address strong{display:block;color:var(--green)}
+    .impact{background:var(--deep);color:white}.impact .section-heading h2{color:white}.impact .section-heading p{color:#d0e4da}.impact .eyebrow{color:var(--gold)}
+    .impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.impact-item{padding:25px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);border-radius:20px}
+    .impact-icon{font-size:1.8rem;margin-bottom:8px}.impact-item h3{color:var(--gold);margin-bottom:8px}.impact-item p{color:#d0e4da;margin:0}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery-card{background:white;border-radius:20px;padding:11px;box-shadow:var(--shadow);border:1px solid rgba(7,91,69,.07);overflow:hidden;transition:transform .22s ease,box-shadow .22s ease}
+    .gallery-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(6,69,54,.14)}
+    .gallery-card img{display:block;width:100%;height:240px;object-fit:cover;border-radius:14px;background:var(--light)}.gallery-card h3{font-size:1.08rem;color:var(--deep);margin:16px 9px 6px}.gallery-card p{font-size:.92rem;color:var(--muted);margin:0 9px 12px}
+    .gallery-note{margin-top:18px;font-size:.85rem;color:var(--muted)}
+    .food-gallery{background:#f1f7f3}.donation-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.donation-card{padding:30px;background:#fff;border-radius:22px;border:1px solid rgba(7,91,69,.08);box-shadow:var(--shadow)}
+    .donation-card h3{color:var(--deep);font-size:1.35rem}.food-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0;list-style:none;margin:20px 0}.food-list li{padding:11px 12px;background:var(--light);border-radius:12px;color:#3e5c4e;font-weight:700}
+    .quote{padding:16px 18px;border-radius:14px;background:#fff8e6;border-left:4px solid var(--gold);color:#66552e;font-style:italic}
+    .pix-section{background:linear-gradient(135deg,#e8f4ef,#f7f4e9)}.pix-card{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;background:#fff;padding:32px;border-radius:26px;box-shadow:var(--shadow)}
+    .pix-key{padding:20px;background:var(--light);border-radius:16px;margin:18px 0;overflow-wrap:anywhere}.pix-key strong{display:block;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:6px}.pix-key code{font-size:1.1rem;font-family:inherit;font-weight:800;color:var(--deep)}
+    .copy-button{border:0;border-radius:12px;padding:11px 15px;background:var(--green);color:#fff;font-weight:800;cursor:pointer;margin-top:12px}
+    .pix-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.pix-option{padding:13px 10px;text-align:center;border-radius:13px;background:#f4f8f5}.pix-option strong{display:block;color:var(--green);font-size:1.05rem}.pix-option span{font-size:.83rem;color:var(--muted)}
+    .small-note{font-size:.84rem;color:var(--muted)}.contact-list{padding-left:19px;color:var(--muted)}.contact-list li{margin:8px 0}.contact-list a{color:var(--green);font-weight:700}
+    .closing{background:var(--deep);color:white;text-align:center}.closing .eyebrow{color:var(--gold)}.closing h2{max-width:850px;margin:14px auto;font-size:clamp(2rem,4vw,3.2rem);color:white}.closing p{max-width:780px;margin:16px auto;color:#d0e4da;font-size:1.05rem}.verse{max-width:700px;margin:28px auto 0;padding:22px;border:1px solid rgba(255,255,255,.2);border-radius:18px;background:rgba(255,255,255,.06);font-size:1.05rem}.verse strong{display:block;color:var(--gold);margin-top:8px}
+    footer{padding:27px 0;background:#032f25;color:#d0e4da}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}footer p{margin:0;font-size:.9rem}.footer-links{display:flex;gap:18px}.footer-links a{color:#fff;text-decoration:none;font-size:.9rem}
+    .section-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(7,91,69,.16),transparent)}
+    .tiny-heart{color:#d6aa48}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+    @media(max-width:850px){.nav{padding:12px 0;align-items:flex-start}.nav-links{justify-content:flex-end;flex-wrap:wrap;gap:10px 14px}.hero-grid,.about-grid,.pix-card{grid-template-columns:1fr}.hero{padding-top:45px}.hero-visual{min-height:300px}.hero-photo{height:300px}.impact-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr)}.donation-grid{grid-template-columns:1fr}}
+    @media(max-width:540px){.container{width:min(100% - 26px,1120px)}.nav{display:block}.brand{margin-bottom:12px}.nav-links{justify-content:flex-start}.nav-links a{font-size:.8rem}.hero{padding:38px 0 48px}section{padding:55px 0}.hero-visual{padding:12px;min-height:270px}.hero-photo{height:260px}.photo-caption{left:22px;right:22px;bottom:22px;font-size:.9rem}.gallery-grid{grid-template-columns:1fr}.gallery-card img{height:250px}.about-card,.donation-card,.pix-card{padding:22px}.food-list{grid-template-columns:1fr}.pix-options{grid-template-columns:1fr}.footer-inner{display:block}.footer-links{margin-top:12px}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#inicio">
+      <img src="imagens/logo.png" alt="Logotipo Irmãos de Caridade">
+      <span>Irmãos de Caridade<small>GRUPO ESPÍRITA</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#sobre">Quem somos</a><a href="#impacto">Nosso impacto</a><a href="#voluntarios">Voluntários</a><a href="#refeicoes">Refeições</a><a href="#doacoes">Doações</a><a href="#pix">Pix</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Solidariedade que alimenta a esperança</div>
+        <h1>Alimentar o corpo.<br><span>Acolher com amor.</span></h1>
+        <p>Ajudar alguém é oferecer mais do que aquilo que temos: é compartilhar cuidado, respeito e esperança. Quando fazemos o bem ao próximo, também cultivamos o melhor que existe em nós.</p>
+        <p>Com carinho e união, os Irmãos de Caridade preparam e distribuem refeições para pessoas em situação de rua e vulnerabilidade social.</p>
+        <div class="hero-actions"><a class="button" href="#doacoes">Quero ajudar ♥</a><a class="button button-light" href="#sobre">Conheça nosso trabalho</a></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-photo" src="imagens/voluntarios-grupo.jpeg" alt="Voluntários reunidos durante uma ação solidária" fetchpriority="high">
+        <div class="photo-caption">Pequenos gestos, grandes demonstrações de amor.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">Nossa história e propósito</div><h2>Quem somos</h2><p>Uma rede de pessoas unidas pela vontade de servir, compartilhar e levar alimento e acolhimento a quem mais precisa.</p></div>
+      <div class="about-grid">
+        <div class="about-emblem"><img src="imagens/logo.png" alt="Logotipo oficial do grupo Irmãos de Caridade"></div>
+        <div class="about-card">
+          <h3>Caridade que se transforma em atitude</h3>
+          <p>O Grupo Espírita Irmãos de Caridade reúne voluntários que dedicam tempo, trabalho e carinho ao preparo e à entrega de refeições. Cada ação é construída com colaboração e com o desejo de tratar todas as pessoas com dignidade.</p>
+          <p>Acreditamos que uma refeição pode aliviar a fome, trazer conforto e lembrar a alguém que ele não está esquecido.</p>
+          <div class="address"><strong>📍 Onde estamos</strong>Endereço provisório para edição: <b>Rua Exemplo, nº 100 — Centro, Barão de Cocais/MG</b><br><span class="small-note">Substitua este endereço pelo endereço correto antes de publicar.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact" id="impacto">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">O valor de cada gesto</div><h2>Uma refeição pode fazer diferença</h2><p>O impacto não está apenas no alimento entregue, mas também no cuidado e na humanidade presentes em cada encontro.</p></div>
+      <div class="impact-grid">
+        <article class="impact-item"><div class="impact-icon">🍲</div><h3>Alívio para a fome</h3><p>Uma refeição preparada com cuidado ajuda a atender uma necessidade básica e urgente.</p></article>
+        <article class="impact-item"><div class="impact-icon">🤝</div><h3>União e solidariedade</h3><p>Quando cada pessoa contribui como pode, a comunidade se torna mais forte e acolhedora.</p></article>
+        <article class="impact-item"><div class="impact-icon">💚</div><h3>Dignidade e esperança</h3><p>Servir com respeito é reconhecer que toda pessoa merece atenção, carinho e consideração.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="voluntarios">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">Mãos que ajudam</div><h2>Nossos voluntários</h2><p>Por trás de cada ação existem pessoas que doam seu tempo, sua energia e seu coração para fazer o bem.</p></div>
+      <div class="gallery-grid">
+        <article class="gallery-card"><img src="imagens/voluntarios-grupo.jpeg" alt="Grupo de voluntários reunidos"><h3>Uma equipe solidária</h3><p>Juntos, fazemos a solidariedade acontecer.</p></article>
+        <article class="gallery-card"><img src="imagens/reuniao-voluntarios.jpeg" loading="lazy" decoding="async" alt="Voluntários em reunião"><h3>União e organização</h3><p>Planejando ações e somando esforços.</p></article>
+        <article class="gallery-card"><img src="imagens/equipe-cozinha.jpeg" loading="lazy" decoding="async" alt="Integrantes durante uma ação na cozinha"><h3>Servir com carinho</h3><p>Cada contribuição ajuda a levar cuidado adiante.</p></article>
+      </div>
+      <p class="gallery-note">As fotos são registros das atividades do grupo. Antes de publicar o site, confirme que as pessoas fotografadas autorizaram a divulgação das imagens.</p>
+    </div>
+  </section>
+
+  <section class="food-gallery" id="refeicoes">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">Da preparação à partilha</div><h2>Preparando refeições com amor</h2><p>Selecionar os ingredientes, cozinhar, organizar as marmitas e servir: cada etapa é parte de uma corrente de cuidado.</p></div>
+      <div class="gallery-grid">
+        <article class="gallery-card"><img src="imagens/preparo-alimentos.jpeg" loading="lazy" decoding="async" alt="Voluntários preparando alimentos"><h3>Preparação dos alimentos</h3><p>O trabalho começa com muitas mãos e disposição.</p></article>
+        <article class="gallery-card"><img src="imagens/ingredientes.jpeg" loading="lazy" decoding="async" alt="Legumes e ingredientes separados para cozinhar"><h3>Ingredientes frescos</h3><p>Doações ajudam a transformar ingredientes em refeições.</p></article>
+        <article class="gallery-card"><img src="imagens/entrega-refeicao.jpeg" loading="lazy" decoding="async" alt="Voluntária servindo uma refeição"><h3>Hora de servir</h3><p>Uma refeição acompanhada de respeito e acolhimento.</p></article>
+        <article class="gallery-card"><img src="imagens/marmitas-prontas.jpeg" loading="lazy" decoding="async" alt="Refeições prontas em recipientes"><h3>Refeições prontas</h3><p>Alimento preparado para chegar a quem precisa.</p></article>
+        <article class="gallery-card"><img src="imagens/marmitas-organizacao.jpeg" loading="lazy" decoding="async" alt="Recipientes organizados para receber refeições"><h3>Organização das marmitas</h3><p>Todo detalhe faz parte do cuidado.</p></article>
+        <article class="gallery-card"><img src="imagens/mensagens-marmitas.jpeg" loading="lazy" decoding="async" alt="Mensagens de fé escritas nas tampas das marmitas"><h3>Uma mensagem de carinho</h3><p>Além do alimento, um gesto que transmite esperança.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="doacoes">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">Você também pode participar</div><h2>Doações de alimentos</h2><p>Uma contribuição, mesmo pequena, pode se transformar em parte de uma refeição. Se puder, ajude com os itens que fazem falta na preparação das marmitas.</p></div>
+      <div class="donation-grid">
+        <article class="donation-card">
+          <h3>🥕 O que precisamos</h3>
+          <ul class="food-list"><li>Arroz e feijão</li><li>Macarrão</li><li>Óleo e temperos</li><li>Legumes e verduras</li><li>Carnes e frango</li><li>Molho de tomate</li><li>Alimentos não perecíveis</li><li>Marmitex e embalagens</li></ul>
+          <p class="small-note">Para combinar a entrega e confirmar quais itens são mais necessários no momento, entre em contato com o grupo.</p>
+        </article>
+        <article class="donation-card">
+          <h3>💚 Cada alimento importa</h3>
+          <p>Um pacote de arroz, alguns legumes ou uma doação de carne podem parecer pouco quando vistos isoladamente. Quando muitas pessoas colaboram, esses itens se unem e ajudam a colocar uma refeição na mesa de quem está passando por dificuldades.</p>
+          <div class="quote">“A solidariedade começa quando percebemos a necessidade do outro e escolhemos fazer algo a respeito.”</div>
+          <p>Doe de coração e dentro das suas possibilidades. Toda ajuda recebida com responsabilidade é valiosa.</p>
+          <a class="button" href="#pix">Veja como doar por Pix</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pix-section" id="pix">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">Sua ajuda vira refeição</div><h2>Faça sua doação por Pix</h2><p>De acordo com as informações fornecidas pelo grupo, cada R$ 7,00 doados podem ajudar a custear uma refeição. A contribuição financeira ajuda na compra dos ingredientes e dos materiais necessários.</p></div>
+      <div class="pix-card">
+        <div>
+          <h3 style="color:var(--deep);font-size:1.55rem">Uma contribuição pode alimentar a esperança</h3>
+          <p>Escolha o valor que cabe no seu orçamento. Toda contribuição é bem-vinda e ajuda a manter essa corrente de solidariedade.</p>
+          <div class="pix-options">
+            <div class="pix-option"><strong>R$ 210</strong><span>30 refeições</span></div>
+            <div class="pix-option"><strong>R$ 420</strong><span>60 refeições</span></div>
+            <div class="pix-option"><strong>R$ 630</strong><span>90 refeições</span></div>
+          </div>
+          <div class="pix-key"><strong>Chave Pix (CNPJ)</strong><code id="pixKey">33.795.005/0001-07</code><br><button class="copy-button" type="button" onclick="copyPix()">Copiar chave Pix</button></div>
+          <p id="copyStatus" class="small-note" aria-live="polite">Confira os dados do destinatário no aplicativo do seu banco antes de confirmar a transferência.</p>
+        </div>
+        <div class="donation-card" style="box-shadow:none;background:#f8fbf8">
+          <h3>Como contribuir</h3>
+          <ol>
+            <li>Abra o aplicativo do seu banco e escolha Pix.</li>
+            <li>Use a chave CNPJ informada ao lado.</li>
+            <li>Confira o nome do destinatário e os dados antes de confirmar.</li>
+            <li>Escolha o valor que deseja doar.</li>
+          </ol>
+          <p><strong>Empresas:</strong> conforme as informações fornecidas, também é possível consultar o grupo sobre contribuição por boleto bancário emitido diretamente para a empresa.</p>
+          <ul class="contact-list">
+            <li><strong>E-mail:</strong> <a href="mailto:irmaosdecaridadegrupoespirita@gmail.com">irmaosdecaridadegrupoespirita@gmail.com</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/irmaosdecaridadege/" target="_blank" rel="noopener">@irmaosdecaridadege</a></li>
+          </ul>
+          <p class="small-note">Os valores de refeições são uma estimativa informada pelo grupo e podem variar conforme os custos. Confirme a chave Pix e os contatos antes da publicação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="container">
+      <div class="eyebrow">Obrigado por fazer parte <span class="tiny-heart">♥</span></div>
+      <h2>O bem que oferecemos ao próximo também ilumina o nosso caminho.</h2>
+      <p>Uma refeição não resolve todas as dificuldades da vida, mas pode aliviar a fome, renovar as forças e levar um pouco de conforto a quem enfrenta um dia difícil. Que nunca nos faltem sensibilidade para enxergar o próximo e disposição para ajudar conforme nossas possibilidades.</p>
+      <div class="verse">“E, se tiverem comida e roupa, fiquem contentes com isso.”<strong>1 Timóteo 6:8</strong></div>
+      <p>Aos voluntários, doadores, parceiros e a cada pessoa que acredita nessa missão, nossa sincera gratidão. Que cada gesto de amor continue se transformando em alimento, acolhimento e esperança. Muito obrigado!</p>
+      <a class="button button-light" href="#inicio">Voltar ao início ↑</a>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><p>© <span id="year"></span> Irmãos de Caridade · Grupo Espírita</p><div class="footer-links"><a href="#inicio">Voltar ao início ↑</a><a href="#doacoes">Como ajudar</a></div></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function copyPix(){
+    const key = document.getElementById('pixKey').textContent.replace(/\D/g,'');
+    const status = document.getElementById('copyStatus');
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(key).then(()=>status.textContent='Chave Pix copiada! Confira o destinatário no aplicativo do banco.').catch(()=>status.textContent='Selecione e copie a chave Pix manualmente: '+document.getElementById('pixKey').textContent);
+    } else {
+      status.textContent='Chave Pix: '+document.getElementById('pixKey').textContent+' — selecione o número e copie.';
+    }
+  }
+</script>
+</body>
+</html>
